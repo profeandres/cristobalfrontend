@@ -1,5 +1,5 @@
 import axios from "axios";
 
-export const getNoticiasRequest = async () => await axios.get("http://localhost:4000/noticias");
+export const getNoticiasRequest = async () => await axios.get("https://cristobal4-production.up.railway.app/");
 
-export const getNoticiaRequest = async (id) => await axios.get("/noticias/" + id);
+export const getNoticiaRequest = async (id) => await axios.get("https://cristobal4-production.up.railway.app/" + id);
