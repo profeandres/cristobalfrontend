@@ -1,5 +1,7 @@
 import axios from "axios";
 
-export const getNoticiasRequest = async () => await axios.get("https://cristobal4-production.up.railway.app/");
+const uri = process.env.API_URI
 
-export const getNoticiaRequest = async (id) => await axios.get("https://cristobal4-production.up.railway.app/" + id);
+export const getNoticiasRequest = async () => await axios.get(uri);
+
+export const getNoticiaRequest = async (id) => await axios.get(uri + id);
